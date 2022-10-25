@@ -1,0 +1,11 @@
+.sidebar {
+  width: 15%;
+  border: 1px solid red;
+}
+.sidebar > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgrey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
