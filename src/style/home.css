@@ -1,0 +1,29 @@
+.card-main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-left: 13%;
+  padding-top: 2%;
+  margin-top: 100px;
+  
+
+}
+a {
+  text-decoration: none;
+}
+.card-content {
+  width: 20%;
+  height: 250px;
+  border:1px solid ;
+  border-radius: 7px;
+}
+.card-content h2 {
+  font-size: 1rem;
+  color: black;
+}
+.video-img {
+  height: 50%;
+  width: 100%;
+
+}

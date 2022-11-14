@@ -1,0 +1,17 @@
+.videoCard {
+  margin-bottom: 40px;
+  width: 270px;
+}
+.videoCard img {
+  height: 120px;
+  width: 200px;
+}
+.video h6 {
+  display: flex;
+}
+ .ReadVideo {
+
+  width: 50%;
+  margin-left: 30%;
+  margin-top: -30%;
+} 
