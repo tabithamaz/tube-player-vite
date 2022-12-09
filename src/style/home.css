@@ -3,7 +3,7 @@
   width: 100%;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-left: 13%;
+  margin-left: 27%;
   padding-top: 2%;
   margin-top: 100px;
   
@@ -17,7 +17,7 @@ a {
   height: 250px;
   border:1px solid ;
   border-radius: 7px;
-}
+} 
 .card-content h2 {
   font-size: 1rem;
   color: black;
@@ -26,4 +26,30 @@ a {
   height: 50%;
   width: 100%;
 
+}
+
+.playVideo{
+  margin-left:30%;
+
+}
+
+ .commenter{
+  display: flex;
+  margin-left: 45%;
+  margin-top: 3%;
+
+}
+
+ .commenter textarea{
+   margin-top: 10%;
+ }
+
+
+button{
+  margin-left: 20%;
+    margin-top: 5%; 
+} 
+
+hr{
+  margin-top: 10%;
 }

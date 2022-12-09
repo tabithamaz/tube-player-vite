@@ -29,6 +29,7 @@ function Connexion() {
       {},
       (googleUser) => {
         const token = googleUser.xc.acces_token;
+        console.log(googleUser.data);
         console.log(googleUser);
         Navigate("/home");
        localStorage.setItem("token", googleUser.xc.acces_token);
@@ -43,9 +44,13 @@ function Connexion() {
     );
   };
   const updateUser = (user) => {
+    console.log(user.wt.hk);
+    localStorage.setItem("profil",user.wt.hk);
       // console.log(user.xc.access_token);
     localStorage.setItem("token", user.xc.access_token);
      Navigate("/home");
+
+     console.log("user : ", user)
   };
 
   return (

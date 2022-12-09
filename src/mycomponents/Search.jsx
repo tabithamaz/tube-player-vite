@@ -11,7 +11,7 @@ function Search(){
     fetch(fetchvideo)
       .then((reponse) => reponse.json())
       .then((data) => setVideo(data.items));
-    }, []);
+    }, [id]);
 
     return(
         <>

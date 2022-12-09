@@ -14,12 +14,12 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <Link to={"/home"}>
+       <Link to={"/home"}>
         <SidebarRow selected Icon={HomeIcon} title="home" />
-      </Link>
-      <Link to="/subscription">
+      </Link> 
+       <Link to="/subscription">
         <SidebarRow Icon={SubscriptionsIcon} title="subscription" />
-      </Link>
+      </Link> 
       <hr />
       {/* <SidebarRow Icon={VideoLibraryIcon} title="Library" /> 
       <SidebarRow Icon={HistoryIcon} title="History" />
