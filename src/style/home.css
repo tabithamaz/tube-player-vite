@@ -6,6 +6,8 @@
   margin-left: 27%;
   padding-top: 2%;
   margin-top: 100px;
+
+
   
 
 }
@@ -21,6 +23,10 @@ a {
 .card-content h2 {
   font-size: 1rem;
   color: black;
+  margin-left: 25%;
+
+
+  
 }
 .video-img {
   height: 50%;
@@ -29,7 +35,7 @@ a {
 }
 
 .playVideo{
-  margin-left:30%;
+  /* margin-left:30%; */
 
 }
 

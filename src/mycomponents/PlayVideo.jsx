@@ -1,5 +1,8 @@
 import { Avatar } from "@mui/material";
 import { useParams } from "react-router-dom";
+import GetComment from "../GetComment";
+import '../style/playvideo.css';
+import PostComment from "../PostComment";
 
 function PlayVideo() {
   const { id } = useParams();
@@ -19,14 +22,16 @@ function PlayVideo() {
       ></iframe>
       <hr/>
       </div>
-      <div className="commenter">
-         <form>
-          <textarea>bonjour</textarea>
-          <button> Envoyer</button>
-          <p> tabitha</p>
-          <p> je suis interessée par votre vidéo</p>
+      <div className="main-comment">
+        <div className="comment-form">
           <Avatar />
-        </form>
+      <PostComment videoId={id}/>
+        </div>
+      <GetComment/>
+        <div>
+          
+          
+        </div>
         </div>
       </div>
     </>

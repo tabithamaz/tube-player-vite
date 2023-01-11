@@ -1,0 +1,33 @@
+.contener{
+    
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.comment-form{
+    display: flex;
+    gap: 4%;
+}
+.comment-form > form{
+    display: flex;
+}
+.comment-form > form > button{
+    border: 1px solid; 
+    border-radius: 7px;
+}
+.comment-data{
+     padding-top: 5%; 
+    display: flex;
+    gap: 4%;
+
+}
+.comment-info > h5{
+    margin-top: 2%;
+}
+.icon{
+    display: flex;
+    gap:0.5rem
+} 
+.icon > h5{
+    margin-top: 3%;
+    font-size: 1.1rem;
+}
