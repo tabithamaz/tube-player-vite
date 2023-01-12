@@ -27,7 +27,8 @@ function PlayVideo() {
           <Avatar />
       <PostComment videoId={id}/>
         </div>
-      <GetComment/>
+      <GetComment videoId={id}/>
+
         <div>
           
           

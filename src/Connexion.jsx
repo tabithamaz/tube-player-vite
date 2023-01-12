@@ -2,8 +2,13 @@
 import { gapi, loadAuth2 } from "gapi-script";
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
+import axios from "axios";
+import  { useContext}  from "react";
+import { ChangeContexte } from "./ChangeContexte";
 
 function Connexion() {
+  const {user, setUser} = useContext(ChangeContexte)
+
   const Navigate = useNavigate();
   const clef =
     "312763566205-gaqcra14dhkb9b8ui112o0fip104r3t9.apps.googleusercontent.com";
@@ -29,13 +34,15 @@ function Connexion() {
       {},
       (googleUser) => {
         const token = googleUser.xc.acces_token;
-        console.log(googleUser.data);
-        console.log(googleUser);
+
+        console.log("Google user : ",googleUser);
+         
         Navigate("/home");
        localStorage.setItem("token", googleUser.xc.acces_token);
         updateUser(googleUser); 
       },
       (googleUser) => {
+       
         updateUser(googleUser);
       },
       (error) => {
@@ -48,10 +55,28 @@ function Connexion() {
     localStorage.setItem("profil",user.wt.hk);
       // console.log(user.xc.access_token);
     localStorage.setItem("token", user.xc.access_token);
+   
      Navigate("/home");
 
      console.log("user : ", user)
-  };
+     
+     setUser(user)
+  }
+
+
+  //  axios({
+  //        method:"POST",
+  //        url:"http://localhost:4000/user/add",
+  //        data:{
+  //            name: googleUser.Nw.wt.Ad,
+  //            email:googleUser.Nw.wt.cu,
+  //            img:googleUser.Nw.wt.hK
+  //        }
+  //        })
+  //        .then((res)=>{
+  //           setUser({...user, user: res.data.user})
+  //           console.log(res.data);
+  //        }).catch(error  => console.log(error))
 
   return (
     <>

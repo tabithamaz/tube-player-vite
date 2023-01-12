@@ -18,7 +18,7 @@ import { height } from "@mui/system";
                   className="video-img"
                 />
                 <Grid container sx={{display:"flex", padding:"1rem" ,width:"100%"}}>
-                         {console.log(data)}          
+                                  
                     <Grid item xs={4}>
                       <Avatar 
                         alt='Remy sharp' 

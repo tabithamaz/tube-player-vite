@@ -18,7 +18,7 @@ export default function Subscription() {
       .then((reponse) => reponse.json())
       .then((data) => setChannel(data.items));
   }, []);
-  console.log(channel);
+  
   return (
     <>
       <div className="card-main">

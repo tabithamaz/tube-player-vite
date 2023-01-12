@@ -14,7 +14,7 @@ function Home({}) {
       .then((reponse) => reponse.json())
       .then((data) => setVideo(data.items));
   }, []);
-  console.log(video);
+
   return (
     <>
       {/* {video.map((element) => (

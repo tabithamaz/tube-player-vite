@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default function Subscription() {
   const clef = "AIzaSyAftn3ekR_UveYUZts3w79bc9E10aeN7Ow";
   const token = localStorage.getItem("token");
-  console.log(token);
   const [channel, setChannel] = useState([]);
 
   useEffect(() => {
@@ -18,7 +17,7 @@ export default function Subscription() {
       .then((reponse) => reponse.json())
       .then((data) => setChannel(data.items));
   }, []);
-  console.log(channel);
+ 
   return (
     <>
       <div className="card-main">

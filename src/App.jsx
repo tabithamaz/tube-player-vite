@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, {useContext} from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 // import Home from "./Home";
 import Home from "./mycomponents/Home";
@@ -10,10 +10,20 @@ import PlayVideo from "./mycomponents/PlayVideo";
 import Subscription from "./mycomponents/Subscription";
 import SubscriptionPlayList from "./mycomponents/SubscriptionPlayList";
 import Search from "./mycomponents/Search";
+import {ChangeContexte} from "./ChangeContexte";
+import { ContextProvider } from "./ChangeContexte";
 
 function App() {
+  const {user} = useContext(ChangeContexte);
+
+
+
+  console.log("Logged user : ", user)
+
   const Layout = ({ children }) => {
+    
     return (
+      
       <>
         <Header />
         <div className="home">
@@ -24,7 +34,10 @@ function App() {
     );
   };
   return (
-    <>
+    
+    <ContextProvider>
+       <BrowserRouter>
+       
       <Routes>
         <Route path="/" element={<Connexion />} />
         <Route
@@ -68,7 +81,9 @@ function App() {
           }
         />
       </Routes>
-    </>
+      </BrowserRouter>
+      </ContextProvider>
+  
   );
 }
 
